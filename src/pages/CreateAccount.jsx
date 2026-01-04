@@ -68,7 +68,7 @@ const CreateAccount = ({ formData, setFormData }) => {
 
   return (
     <div className="p-4 px-6">
-      <h1 className="font-bold text-3xl w-60 mt-4 mb-9">
+      <h1 className="font-semibold text-3xl w-60 mt-4 mb-9">
         Create your PopX account
       </h1>
 
@@ -76,7 +76,7 @@ const CreateAccount = ({ formData, setFormData }) => {
       <div className="relative mt-5">
         <label
           htmlFor="fullName"
-          className="absolute left-2 -translate-y-1/2 text-purple/20 text-xl bg-[#F5F5F5] pl-1 pr-2 text-purple-600 font-semibold"
+          className="absolute left-2 -translate-y-1/2 text-purple/20 text-md bg-[#F5F5F5] pl-1 pr-2 text-purple-600 "
         >
           Full Name <span className="text-red-500">*</span>
         </label>
@@ -88,15 +88,15 @@ const CreateAccount = ({ formData, setFormData }) => {
           placeholder="Enter full Name"
           value={currentFormData.fullName}
           onChange={handleChange}
-          className="w-full rounded-lg border border-[#CBCBCB] px-4 py-4 outline-none focus:border-[#E70B897B] focus:ring-0 text-lg"
+          className="w-full rounded-lg border border-[#CBCBCB] px-4 py-2.5 outline-none focus:border-[#E70B897B] focus:ring-0 text-sm"
         />
       </div>
 
       {/* Phone */}
-      <div className="relative mt-8">
+      <div className="relative mt-4">
         <label
           htmlFor="phone"
-          className="absolute left-2 -translate-y-1/2 text-purple/20 text-xl bg-[#F5F5F5] pl-1 pr-2 text-purple-600 font-semibold"
+          className="absolute left-2 -translate-y-1/2 text-purple/20 text-md bg-[#F5F5F5] pl-1 pr-2 text-purple-600"
         >
           Phone Number <span className="text-red-500">*</span>
         </label>
@@ -108,15 +108,15 @@ const CreateAccount = ({ formData, setFormData }) => {
           placeholder="Enter phone Number"
           value={currentFormData.phone}
           onChange={handleChange}
-          className="w-full rounded-lg border border-[#CBCBCB] px-4 py-4 outline-none focus:border-[#E70B897B] focus:ring-0 text-lg"
+          className="w-full rounded-lg border border-[#CBCBCB] px-4 py-2.5 outline-none focus:border-[#E70B897B] focus:ring-0 text-sm"
         />
       </div>
 
       {/* Email */}
-      <div className="relative mt-8">
+      <div className="relative mt-4">
         <label
           htmlFor="email"
-          className="absolute left-2 -translate-y-1/2 text-purple/20 text-xl bg-[#F5F5F5] pl-1 pr-2 text-purple-600 font-semibold"
+          className="absolute left-2 -translate-y-1/2 text-purple/20 text-md bg-[#F5F5F5] pl-1 pr-2 text-purple-600 "
         >
           Email Address <span className="text-red-500">*</span>
         </label>
@@ -128,15 +128,15 @@ const CreateAccount = ({ formData, setFormData }) => {
           placeholder="Enter email Address"
           value={currentFormData.email}
           onChange={handleChange}
-          className="w-full rounded-lg border border-[#CBCBCB] px-4 py-4 outline-none focus:border-[#E70B897B] focus:ring-0 text-lg"
+          className="w-full rounded-lg border border-[#CBCBCB] px-4 py-2.5 outline-none focus:border-[#E70B897B] focus:ring-0 text-sm"
         />
       </div>
 
       {/* Password */}
-      <div className="relative mt-8">
+      <div className="relative mt-4">
         <label
           htmlFor="password"
-          className="absolute left-2 -translate-y-1/2 text-purple/20 text-xl bg-[#F5F5F5] pl-1 pr-2 text-purple-600 font-semibold"
+          className="absolute left-2 -translate-y-1/2 text-purple/20 text-md bg-[#F5F5F5] pl-1 pr-2 text-purple-600 "
         >
           Password <span className="text-red-500">*</span>
         </label>
@@ -148,15 +148,15 @@ const CreateAccount = ({ formData, setFormData }) => {
           placeholder="Enter Password"
           value={currentFormData.password}
           onChange={handleChange}
-          className="w-full rounded-lg border border-[#CBCBCB] px-4 py-4 outline-none focus:border-[#E70B897B] focus:ring-0 text-lg"
+          className="w-full rounded-lg border border-[#CBCBCB] px-4 py-2.5 outline-none focus:border-[#E70B897B] focus:ring-0 text-sm"
         />
       </div>
 
       {/* Company */}
-      <div className="relative mt-8">
+      <div className="relative mt-4">
         <label
           htmlFor="company"
-          className="absolute left-2 -translate-y-1/2 text-purple/20 text-xl bg-[#F5F5F5] pl-1 pr-2 text-purple-600 font-semibold"
+          className="absolute left-2 -translate-y-1/2 text-purple/20 text-md bg-[#F5F5F5] pl-1 pr-2 text-purple-600 "
         >
           Company Name
         </label>
@@ -167,13 +167,13 @@ const CreateAccount = ({ formData, setFormData }) => {
           placeholder="Enter Company Name"
           value={currentFormData.company}
           onChange={handleChange}
-          className="w-full rounded-lg border border-[#CBCBCB] px-4 py-4 outline-none focus:border-[#E70B897B] focus:ring-0 text-lg"
+          className="w-full rounded-lg border border-[#CBCBCB] px-4 py-2.5 outline-none focus:border-[#E70B897B] focus:ring-0 text-sm"
         />
       </div>
 
       {/* Radio */}
-      <div className="mt-5">
-        <p className="text-lg">
+      <div className="mt-4">
+        <p className="text-md">
           Are you an Agency? <span className="text-red-500">*</span>
         </p>
         <div className="flex gap-6">
@@ -182,7 +182,7 @@ const CreateAccount = ({ formData, setFormData }) => {
             return (
               <label
                 key={val}
-                className="flex items-center gap-x-4 cursor-pointer text-lg"
+                className="flex items-center gap-x-4 cursor-pointer text-md"
               >
                 <input
                   type="radio"
@@ -190,7 +190,7 @@ const CreateAccount = ({ formData, setFormData }) => {
                   value={val}
                   checked={isChecked}
                   onChange={handleChange}
-                  className={`w-5 h-5 ${isChecked ? "accent-[#7431FE]" : "accent-gray-400"
+                  className={`w-3 h-3 ${isChecked ? "accent-[#7431FE]" : "accent-gray-400"
                     }`}
                 />
                 {val}
@@ -202,7 +202,7 @@ const CreateAccount = ({ formData, setFormData }) => {
 
       <button
         onClick={handleSubmit}
-        className="w-full mt-16 bg-[#7431FE] p-4 rounded-lg text-xl text-white font-semibold cursor-pointer"
+        className="w-full mt-28 bg-[#7431FE] px-4 py-2 rounded-lg text-lg text-white cursor-pointer"
       >
         Create Account
       </button>

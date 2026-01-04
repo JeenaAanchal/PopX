@@ -31,14 +31,17 @@ const Login = () => {
             return;
         }
 
-       
+
         navigate("/account-settings");
     };
 
     return (
         <div className="w-full p-8">
-            <h2 className="text-4xl font-bold mb-2 leading-12">
-                Signin to your PopX account
+            <h2 className="text-3xl font-semibold ">
+                Signin to your
+            </h2>
+            <h2 className="text-3xl font-semibold ">
+                PopX account
             </h2>
 
             <div className="text-gray-500 mb-8 mt-4 text-lg">
@@ -51,7 +54,7 @@ const Login = () => {
                 <div className="relative">
                     <label
                         htmlFor="email"
-                        className="absolute left-4 -top-4 text-purple-600 text-xl bg-[#F6F6F6] px-1"
+                        className="absolute left-4 -top-4 text-purple-600 text-lg bg-[#F6F6F6] px-1"
                     >
                         Email Address
                     </label>
@@ -63,7 +66,7 @@ const Login = () => {
                         placeholder="Enter email address"
                         value={loginData.email}
                         onChange={handleChange}
-                        className="w-full border border-gray-300 rounded-lg px-4 py-4 outline-none focus:border-purple-500 focus:ring-0 text-lg"
+                        className="w-full border border-gray-300 rounded-lg px-4 py-4 outline-none focus:border-purple-500 focus:ring-0 text-sm"
                     />
                 </div>
 
@@ -71,7 +74,7 @@ const Login = () => {
                 <div className="relative">
                     <label
                         htmlFor="password"
-                        className="absolute left-2 -top-2.5 text-purple-600 text-xl bg-[#F6F6F6] px-1"
+                        className="absolute left-2 -top-2.5 text-purple-600 text-lg bg-[#F6F6F6] px-1"
                     >
                         Password
                     </label>
@@ -83,7 +86,7 @@ const Login = () => {
                         placeholder="Enter password"
                         value={loginData.password}
                         onChange={handleChange}
-                        className="w-full border border-gray-300 rounded-lg px-4 py-4 outline-none focus:border-purple-500 focus:ring-0 text-lg"
+                        className="w-full border border-gray-300 rounded-lg px-4 py-4 outline-none focus:border-purple-500 focus:ring-0 text-sm"
                     />
                 </div>
 
